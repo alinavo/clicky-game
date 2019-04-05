@@ -5,6 +5,23 @@ import Header from "./components/Header";
 import images from './images';
 import Footer from './components/Footer';
 
+import hagrid from './images/hagrid.png';
+import harry from './images/harry.png';
+import hermione from './images/hermione.png';
+import luna from './images/luna.png';
+import malfoy from './images/malfoy.png';
+import minerva from './images/minerva.png';
+import neville from './images/neville.png';
+import ron from './images/ron.png';
+import snape from './images/snape.png';
+import trelawney from './images/trelawney.png';
+import voldy from './images/voldy.png';
+import Footer from './components/Footer';
+
+const images = [
+  dumbledore, hagrid, harry, hermione, luna, malfoy, minerva, neville, ron, snape, trelawney, voldy
+];
+
 class ClickyGame extends Component {
   state = {
     score: 0,
@@ -31,7 +48,7 @@ class ClickyGame extends Component {
   shuffleArray() {
     // COPIES CURRENT CHARACTERS
 
-    const newArray = images.slice();
+    const newArray = images
 
     // STORES IN SHUFFLED ARRAY
     const shuffleArray = [];
