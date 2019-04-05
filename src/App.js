@@ -2,9 +2,10 @@ import React, { Component } from "react";
 import Container from "./components/Container";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
-import images from './images';
+// import images from './images';
 import Footer from './components/Footer';
 
+import dumbledore from './images/dumbledore.png';
 import hagrid from './images/hagrid.png';
 import harry from './images/harry.png';
 import hermione from './images/hermione.png';
@@ -16,7 +17,7 @@ import ron from './images/ron.png';
 import snape from './images/snape.png';
 import trelawney from './images/trelawney.png';
 import voldy from './images/voldy.png';
-import Footer from './components/Footer';
+
 
 const images = [
   dumbledore, hagrid, harry, hermione, luna, malfoy, minerva, neville, ron, snape, trelawney, voldy
@@ -48,7 +49,7 @@ class ClickyGame extends Component {
   shuffleArray() {
     // COPIES CURRENT CHARACTERS
 
-    const newArray = images
+    const newArray = images;
 
     // STORES IN SHUFFLED ARRAY
     const shuffleArray = [];
