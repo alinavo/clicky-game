@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Navbar from './Navbar';
 import Container from './Container';
+import Header from './Header';
 
 
 class ClickyGame extends Component {
