@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import Container from "./Container";
-import Navbar from "./Navbar";
-import Header from "./Header";
-import images from '../images';
-import Footer from './Footer';
+import Container from "./components/Container";
+import Navbar from "./components/Navbar";
+import Header from "./components/Header";
+import images from './images';
+import Footer from './components/Footer';
 
 class ClickyGame extends Component {
   state = {
@@ -38,9 +38,9 @@ class ClickyGame extends Component {
 
     // LOOP THROUGH INDEX AND SPLICE
     // PUSHES TO SHUFFLED ARRAY
-    while (newArr.length > 0) {
+    while (newArray.length > 0) {
       shuffleArray.push(
-        newArr.splice(Math.floor(Math.random() * newArray.length), 1)[0]
+        newArray.splice(Math.floor(Math.random() * newArray.length), 1)[0]
       );
     }
 
